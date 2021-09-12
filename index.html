@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corebiz - Gobeyond 2021</title>
+    <link rel="shortcut icon" href="img/favicon/logo-favicon-32 x 32.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- cabeçalho desktop -->
+    <header id="header">
+        <div id="container">
+            <a href="#">
+                <img src="img/header/logo-desktop.png" alt="Imagem logo Corebiz" id="logo">
+            </a>
+            <nav id="nav-bar">
+                <a href="#" class="item-nav">Home</a>
+                <div class="dropdown">
+                    <a class="item-nav">Categoria</button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="item-nav">Categoria 2</button>
+                    <div class="dropdown-content">
+                      <a href="#">Link 1</a>
+                      <a href="#">Link 2</a>
+                      <a href="#">Link 3</a>
+                    </div>
+                 </div>
+                <a href="#" class="item-nav">Contato</a>
+            </nav>
+            
+            <div id="search" width= 15em;>
+                <input type="search" placeholder="O que está procurando?" name="" id="">
+                <img src="img/header/lupa.png" alt="">
+            </div>
+            <a href="#">
+                <img src="img/header/icon-account.png" alt="">
+            </a>
+            <a href="#">
+                <img src="img/header/icon-cart.png" alt="">
+            </a>
+        </div>
+            
+    </header>
+    <!-- cabeçalho mobile -->
+    <header id="mobile">
+        <nav id="nav-bar-mobile">
+            <a href=""> 
+                <img src="img/header/menu-hamburguer.svg" alt="">
+            </a>
+            <a href="">
+                <img src="img/header/logo-corebiz-mobile.png" alt="">
+            </a>
+            <a href="">
+               <img src="img/header/icon-cart.png" alt="">
+            </a>
+       </nav>
+       <div id="search" width= 15em;>
+        <input type="search" placeholder="O que está procurando?" name="" id="">
+        <img src="img/header/lupa.png" alt="">
+    </div>
+    </header>
+    <!-- SlideShow -->
+    <section id="banner">
+        <div class="slideshow-container">
+            <div class="mySlides">
+            <p class="text"> Olá, você quer fazer entrar de cabeça em desenvolvimento? 
+                 <br>
+                <strong>front-end • back-end • mobile</strong> 
+            </p>    
+            <img src="img/banner/slide-one.png">
+            </div>
+        
+            <div class="mySlides">
+                <p class="text"> teste </p>  
+            <img src="img/banner/slide-two.jpg">
+            </div>
+        
+            <div class="mySlides">
+                <p class="text"> teste 2 </p>  
+            <img src="img/banner/slide-three.jpg">
+            </div>
+            <div class="mySlides">
+                <p class="text"> teste 4 </p>  
+                <img src="img/banner/slide-four.jpg">
+                </div>
+            <div id="container-buttons">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>   
+    </section>
+    <!-- Prateleira -->
+    <main id="shelf">
+        <div id="container-shelf">
+         <h1 id="title-shelf">Mais vendidos</h1>
+         <hr id="hr-shelf">
+         <div id="prateleira">
+            <a class="" >&#10094;</a>
+             <article  class="item-shelf">
+                 <figure>
+                      <img src="img/shelf/product.png">
+                      <figcaption>
+                          <h3>SAPATO FLOATER PRETO</h3>
+                          <img src="img/shelf/rating.png" alt="">
+                           <span>de $299,00</span>
+                           <strong>por R$ 259,90</strong>
+                           <span>ou em 9x de R$ 28,87 </span>
+                           <a href="https://api.whatsapp.com/send?phone=5511949120546&text=Bem%20vindo%20ao%20chat%20online%2C%20qualquer%20d%C3%BAvida%20%C3%A9%20s%C3%B3%20chamar%20%3A">
+                               <button class="call-to-action">
+                                   <img src="img/shelf/icon-button.png" alt="">
+                                    <strong> COMPRAR</strong>
+                               </button>
+                           </a>
+                      </figcaption>
+                 </figure>
+             </article>
+             <article class="item-shelf">
+                <figure>
+                     <img src="img/shelf/product.png">
+                     <figcaption>
+                         <h3>SAPATO FLOATER PRETO</h3>
+                         <img src="img/shelf/rating.png" alt="">
+                          <span>de $299,00</span>
+                          <strong>por R$ 259,90</strong>
+                          <span>ou em 9x de R$ 28,87 </span>
+                          <a href="https://api.whatsapp.com/send?phone=5511949120546&text=Bem%20vindo%20ao%20chat%20online%2C%20qualquer%20d%C3%BAvida%20%C3%A9%20s%C3%B3%20chamar%20%3A">
+                              <button class="call-to-action">
+                                  <img src="img/shelf/icon-button.png" alt="">
+                                   <strong> COMPRAR</strong>
+                              </button>
+                          </a>
+                     </figcaption>
+                </figure>
+            </article>
+            <article class="item-shelf">
+                <figure>
+                     <img src="img/shelf/product.png">
+                     <figcaption>
+                         <h3>SAPATO FLOATER PRETO</h3>
+                         <img src="img/shelf/rating.png" alt="">
+                          <span>de $299,00</span>
+                          <strong>por R$ 259,90</strong>
+                          <span>ou em 9x de R$ 28,87 </span>
+                          <a href="https://api.whatsapp.com/send?phone=5511949120546&text=Bem%20vindo%20ao%20chat%20online%2C%20qualquer%20d%C3%BAvida%20%C3%A9%20s%C3%B3%20chamar%20%3A">
+                              <button class="call-to-action">
+                                  <img src="img/shelf/icon-button.png" alt="">
+                                   <strong> COMPRAR</strong>
+                              </button>
+                          </a>
+                     </figcaption>
+                </figure>
+            </article>
+            <article class="item-shelf">
+                <figure>
+                     <img src="img/shelf/product.png">
+                     <figcaption>
+                         <h3>SAPATO FLOATER PRETO</h3>
+                         <img src="img/shelf/rating.png" alt="">
+                          <span>de $299,00</span>
+                          <strong>por R$ 259,90</strong>
+                          <span>ou em 9x de R$ 28,87 </span>
+                          <a href="https://api.whatsapp.com/send?phone=5511949120546&text=Bem%20vindo%20ao%20chat%20online%2C%20qualquer%20d%C3%BAvida%20%C3%A9%20s%C3%B3%20chamar%20%3A">
+                              <button class="call-to-action">
+                                  <img src="img/shelf/icon-button.png" alt=""526.5>
+                                   <strong> COMPRAR</strong>
+                              </button>
+                          </a>
+                     </figcaption>
+                </figure>
+            </article>
+            <a class="" >&#10095;</a>
+         </div>
+        </div>
+         
+    </main>
+    <section id="newsletter">
+        <div id="newsletter-container">
+             <h2>Participe de nossas news com promoções e novidades! </h2>
+             <form action="" id="form-newsletter">
+                 <input type="text" placeholder="Digite o seu nome" name="" id="name-user" required>
+                 <input type="email" placeholder="Digite o seu email" name="" id="email-user" required>
+                 <input type="submit" value="Eu quero!">
+             </form>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer id="footer">
+     <div id="footer-container">
+         <div id="endereco">
+             <h2>Localização</h2>
+             <hr>
+             <address>
+                <p>
+                    Avenida Andrômeda, 2000. Bloco 6 e 8
+                    Alphavile SP
+                </p>
+        
+                <p>brasil@corebiz.ag</p>
+                
+                <p>+55 11 3090 1039</p>
+             </address>
+         </div>
+         <div id="contato">
+             <button>
+                 <img src="img/footer/icon-contato.png" alt="">
+                 <span> ENTRE EM CONTATO </span>
+             </button>
+             <button>
+                <img src="img/footer/icon-fale-conosco.png" alt="">
+                <span> FALE COM O NOSSO
+                    CONSULTOR ONLINE </span>
+            </button>
+         </div>
+         <div id="empresas">
+               <img src="img/footer/logo-footer.png" alt=""> 
+               <img src="img/footer/vtex-footer.png" alt=""> 
+         </div>
+     </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
