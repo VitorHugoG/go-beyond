@@ -1,3 +1,4 @@
+//função para o Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -23,4 +24,23 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+
+//funcao para alternar a shelf de produtos
+var slideI = 1;
+mostrarSlides(slideI);
+
+function maisSlides(n) {
+  mostrarSlides(slideI += n);
+}
+
+function mostrarSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("prateleira");
+  if (n > slides.length) {slideI = 1}
+  if (n < 1) {slideI = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  } 
+  slides[slideI-1].style.display = "flex";
 }
