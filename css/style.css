@@ -397,7 +397,7 @@
   }
 
   #endereco address p{
-    font-size: .8rem;
+    font-size: .5rem;
   }
   #contato button{
     font-size: .5rem;
@@ -411,5 +411,12 @@
   }
   #form-newsletter input[type="text"],#form-newsletter input[type="email"],#form-newsletter input[type="submit"]{
     width: 50%;
+  }
+  #container-buttons{
+    display: none;
+  }
+  #empresas img{
+    width: 40px;
+    height: 19px;
   }
 }
