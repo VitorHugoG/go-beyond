@@ -155,7 +155,7 @@
 
 #hr-shelf{
     width: 8%;
-    height: 1vh;
+    height: 1.1vw;
     background-color:#E9BF33;
     border:none;
     border-radius: 5px;
@@ -343,10 +343,10 @@
      display: none;
    }
    #mobile{
-     height: 12vh;
+     height: 25vw;
    }
    #nav-bar-mobile{
-     height: 8vh;
+     height: 19vw;
      display: flex;
      justify-content: space-around;
      align-items: center;
@@ -361,7 +361,7 @@
      display: none;
    }
    .slideshow-container {
-       height: 25vh;
+       height: 45vw;
        background-color: rebeccapurple;
    }
    .text {
@@ -376,11 +376,11 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   .mySlides {
-    height: 25vh;
+    height: 45vw;
   }
 
   .mySlides img{
-    height: 25vh
+    height: 45vw
   }
   #empresas img{
     width: 50px;
@@ -395,6 +395,9 @@
   .item-shelf:nth-child(2),.item-shelf:nth-child(3), .item-shelf:nth-child(4){
     display: none;
   }
+  #footer-container #endereco{
+    height: 30vw;
+  }
 
   #endereco address p{
     font-size: .5rem;
@@ -403,7 +406,7 @@
     font-size: .5rem;
   }
   #newsletter-container{
-   height: 45vh;
+   height: 80vw;
   } 
   #form-newsletter{
     width: 100%;
@@ -411,9 +414,13 @@
   }
   #form-newsletter input[type="text"],#form-newsletter input[type="email"],#form-newsletter input[type="submit"]{
     width: 50%;
+    height: 10vw;
   }
   #container-buttons{
     display: none;
+  }
+  #empresas{
+    height: 25vw;
   }
   #empresas img{
     width: 40px;
