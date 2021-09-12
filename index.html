@@ -58,7 +58,7 @@
     <!-- cabeçalho mobile -->
     <header id="mobile">
         <nav id="nav-bar-mobile">
-            <a href=""> 
+            <a href="#" onclick="abrir()"> 
                 <img src="img/header/menu-hamburguer.svg" alt="">
             </a>
             <a href="">
@@ -67,17 +67,27 @@
             <a href="">
                <img src="img/header/icon-cart.png" alt="">
             </a>
+          
        </nav>
        <div id="search" width= 15em;>
         <input type="search" placeholder="O que está procurando?" name="" id="">
-        <img src="img/header/lupa.png" alt="">
+        <img src="img/header/lupa.png" alt="">  
+          
+    </div>
+    <div id="menu">
+        <a onclick="fechar()" id="fechar">X</a>
+        <a href="#"  class="links-menu">Home</a>
+        <a href="#" class="links-menu">Categoria 1</a>
+        <a href="#" class="links-menu">Categoria 2</a>
+        <a href="#" class="links-menu">Contato</a>
     </div>
     </header>
+   
     <!-- SlideShow -->
     <section id="banner">
         <div class="slideshow-container">
             <div class="mySlides">
-            <p class="text"> Olá, você quer fazer entrar de cabeça em desenvolvimento? 
+            <p class="text"> Olá, você quer entrar de cabeça em desenvolvimento? 
                  <br>
                 <strong>front-end • back-end • mobile</strong> 
             </p>    
@@ -85,16 +95,16 @@
             </div>
         
             <div class="mySlides">
-                <p class="text"> teste </p>  
+                <p class="text phrase-two"> Nunca é tarde para aprender  </p>  
             <img src="img/banner/slide-two.jpg">
             </div>
         
             <div class="mySlides">
-                <p class="text"> teste 2 </p>  
+                <p class="text phrase-three"> PLUS ULTRA! </p>  
             <img src="img/banner/slide-three.jpg">
             </div>
             <div class="mySlides">
-                <p class="text"> teste 4 </p>  
+                <p class="text phrase-four"> Aprenda hoje mesmo a arte da programação </p>  
                 <img src="img/banner/slide-four.jpg">
                 </div>
             <div id="container-buttons">
@@ -119,6 +129,7 @@
             <a class="button-caroussel" onclick="maisSlides(-1)" >&#10094;</a>
              <article  class="item-shelf">
                  <figure>
+                     <span id="off"><p> OFF</p></span>
                       <img src="img/shelf/product.png">
                       <figcaption>
                           <h3>SAPATO FLOATER PRETO</h3>
@@ -137,6 +148,7 @@
              </article>
              <article class="item-shelf">
                 <figure>
+                    <span id="off"><p> OFF</p></span>
                      <img src="img/shelf/product.png">
                      <figcaption>
                          <h3>SAPATO FLOATER PRETO</h3>
@@ -155,6 +167,7 @@
             </article>
             <article class="item-shelf">
                 <figure>
+                    <span id="off"><p> OFF</p></span>
                      <img src="img/shelf/product.png">
                      <figcaption>
                          <h3>SAPATO FLOATER PRETO</h3>
@@ -173,6 +186,7 @@
             </article>
             <article class="item-shelf">
                 <figure>
+                    <span id="off"><p> OFF</p></span>
                      <img src="img/shelf/product.png">
                      <figcaption>
                          <h3>SAPATO FLOATER PRETO</h3>
@@ -316,5 +330,6 @@
      </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/eventos-menu.js"></script>
 </body>
 </html>

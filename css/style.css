@@ -4,8 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Nunito;
+    transition: .5s;
 }
-#nav-bar-mobile, #mobile #search{
+#nav-bar-mobile, #mobile #search,#menu{
   display: none; 
 }
 #header #container{
@@ -67,9 +68,10 @@
     border-bottom: 1px solid #000;
 }
 #search input{
-    width: 13em;
+    width: 15em;
     border: none;
     outline: none;
+    
 }
 
 .slideshow-container {
@@ -117,6 +119,12 @@
    color: #E9BF33;
 
 }
+
+.phrase-two,.phrase-three,.phrase-four{
+  color: #F8475F;
+  font-weight: 900;
+  
+}
 #container-buttons{
     position: absolute;
     text-align:center;
@@ -149,7 +157,7 @@
 
 #hr-shelf{
     width: 8%;
-    height: 1.1vw;
+    height: .5vw;
     background-color:#E9BF33;
     border:none;
     border-radius: 5px;
@@ -172,10 +180,24 @@
 }
 
 .item-shelf{
+    position: relative;
     align-items: center;
     padding: .8em;
     box-shadow: 5px  5px 10px #ccc;
 }
+
+#off{
+    width: 5.13rem;
+    height: 4.5rem;
+    position: absolute;
+    right: .8rem;
+    background-image: url(../img/shelf/polygon.svg);
+}
+#off p{
+  color: #fff;
+  padding: .5rem .5rem 0 2rem;;
+}
+
 .item-shelf figure{
     text-align: center;
 }
@@ -327,7 +349,7 @@
     display: none;
   }
   .text {
-    font-size: .8rem;
+    font-size: 1.5rem;
     width: 50%;
   }
   #container-buttons{
@@ -355,7 +377,7 @@
      width: 80%;
      margin: auto;
    }
- .item-shelf:nth-child(3), .item-shelf:nth-child(4){
+   .item-shelf:nth-child(3), .item-shelf:nth-child(4){
      display: none;
    }
    .slideshow-container {
@@ -364,7 +386,7 @@
    }
    .text {
     color: #f2f2f2;
-    font-size: 1rem;
+    font-size: 1.3rem;
     position: absolute;
     top: 3em;
     left: 15vw;
@@ -380,6 +402,10 @@
   .mySlides img{
     height: 45vw
   }
+  #newsletter-container h2{
+     text-align: center;
+  }
+
   #empresas img{
     width: 50px;
     height: 25px;
@@ -387,6 +413,30 @@
   .prev, .next{
     margin-top: -30px;
   }
+  #menu{
+    width: 0;
+    position: fixed; 
+    top: 0;  
+    display: none;
+    flex-direction: column;
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: #E9BF33; 
+    height: 100vh;
+    z-index: 5;
+  
+  }
+  #menu a{
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  #fechar{
+    cursor: pointer;
+    font-weight: 900;
+  }
+  
+  
 }
 
 @media  screen and (max-width:567px){
@@ -396,7 +446,9 @@
   #footer-container #endereco{
     height: 30vw;
   }
-
+  .text {
+    font-size: 1.1rem;
+  }
   #endereco address p{
     font-size: .5rem;
   }
@@ -423,5 +475,22 @@
   #empresas img{
     width: 40px;
     height: 19px;
+  }
+
+  #footer-container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vw;
+  }
+  #footer-container div{
+    height: 30vw;
+  }
+  #contato{
+    align-items: center;
+  }
+
+  #contato button{
+    width: 40vw;
   }
 }
