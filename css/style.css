@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: Nunito;
-    transition: .5s;
+    transition: .125s;
+    outline: none;
 }
 #nav-bar-mobile, #mobile #search,#menu{
   display: none; 
@@ -249,14 +250,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+}
+#form-newsletter div{
+  width: 25%;
+  text-align: center;
 }
 
 #form-newsletter input[type="text"],#form-newsletter input[type="email"]{
-  width: 25%;
+  width: 90%;
   height: 7vh;
   margin: 2%;
-  border:none;
+  border: 1px solid #fff;
   font-family: 'Lato', sans-serif;
   text-indent: 15px;
   border-radius: 5px;
@@ -264,12 +269,19 @@
 #form-newsletter input[type="submit"]{
   width: 15%;
   height: 7vh;
-  border:none;
+  border: none;
   background-color:#E9BF33;
   font-family: 'Lato', sans-serif;
   color: #fff;
   border-radius: 5px;
+
 }
+
+.active-error{
+  color: red;
+  font-size: 0.9rem;
+}
+
 
 
 #footer{
@@ -422,7 +434,7 @@
     justify-content: space-around; 
     align-items: center; 
     background-color: #E9BF33; 
-    height: 100vh;
+    height: 88vh;
     z-index: 5;
   
   }
@@ -435,8 +447,11 @@
     cursor: pointer;
     font-weight: 900;
   }
-  
-  
+
+  #hr-shelf{
+    width: 20%;
+    margin: 1.1rem;
+  }
 }
 
 @media  screen and (max-width:567px){
@@ -462,6 +477,14 @@
     width: 100%;
     flex-direction: column;
   }
+  #form-newsletter div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
   #form-newsletter input[type="text"],#form-newsletter input[type="email"],#form-newsletter input[type="submit"]{
     width: 50%;
     height: 10vw;
@@ -484,13 +507,14 @@
     height: 80vw;
   }
   #footer-container div{
-    height: 30vw;
+    height: 25vw;
   }
   #contato{
     align-items: center;
   }
 
   #contato button{
-    width: 40vw;
+    width: 45vw;
+    height: 10vw;
   }
 }
