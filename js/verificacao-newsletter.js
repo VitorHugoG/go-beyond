@@ -1,8 +1,7 @@
 const fields =  document.querySelectorAll('[required]')
 
-
-
 function ValidateField(field){
+    //lógica para verificar se existem erros
     function verifyErrors(){
         let foundError = false;
   
@@ -12,6 +11,20 @@ function ValidateField(field){
            }
         }
         return foundError;
+    }
+
+    function customMessage(typeError){
+        const messages = {
+            text: {
+                valueMissing : "Preencha com  seu nome completo"
+            },
+            email: {
+                valueMissing : "Preencha com um email válido",
+                typeMismatch: ""
+            }
+        }
+
+        return messages[field.type][typeError]
     }
 
     function setCustomMessage (message){
@@ -28,9 +41,14 @@ function ValidateField(field){
     }
 
    return () =>{
-    if(verifyErrors()){
+    const error = verifyErrors()
+   
+
+    if(error){
+       const message = customMessage(error)
+
        field.style.borderColor = "red"  
-       setCustomMessage("Campo Obrigatório")
+       setCustomMessage(message)
     }else{
        field.style.borderColor = "green"  
        setCustomMessage()
@@ -44,14 +62,10 @@ function customValidation(event){
   const validation = ValidateField(field)
 
   validation()
-  //lógica para verificar se existem erros
-
   
-
+  //só pra testar
   const error = ValidateField(field)
   console.log("Error Exist " + error)
-
-  //trocar mensagem de required
 
  
 }
@@ -67,7 +81,5 @@ for(const field of fields){
 
 
 document.querySelector('form').addEventListener('submit',event => {
-    
-
-   
+ 
 })
