@@ -8,4 +8,5 @@ tendo como principais recursos:
  - Slideshow interativo
  - Demonstração de produtos atráves de um carrousel
  - Responsividade para diversos tamanhos de display
-
+ - Menu dropdown
+ - Verificação de email e nome 
