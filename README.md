@@ -9,4 +9,5 @@ tendo como principais recursos:
  - Demonstração de produtos atráves de um carrousel
  - Responsividade para diversos tamanhos de display
  - Menu dropdown
- - Verificação de email e nome 
+ - Validação de email e nome nos campos de formulário
+  
