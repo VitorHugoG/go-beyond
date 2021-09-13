@@ -1,4 +1,6 @@
 const fields =  document.querySelectorAll('[required]')
+const confirm = document.querySelector("#confirm-container")
+const form = document.querySelector("#newsletter-container")
 
 function ValidateField(field){
     //lógica para verificar se existem erros
@@ -36,7 +38,9 @@ function ValidateField(field){
         }else{
             spanError.classList.remove("active-error");
             spanError.innerHTML = ""
+          
         }
+       
        
     }
 
@@ -46,12 +50,12 @@ function ValidateField(field){
 
     if(error){
        const message = customMessage(error)
-
        field.style.borderColor = "red"  
        setCustomMessage(message)
     }else{
        field.style.borderColor = "green"  
        setCustomMessage()
+      
     }
    }  
 }
@@ -80,6 +84,11 @@ for(const field of fields){
 }
 
 
+
 document.querySelector('form').addEventListener('submit',event => {
-    
+    event.preventDefault();
+    form.style.display = "none"
+    confirm.style.display = "flex";
 })
+
+
